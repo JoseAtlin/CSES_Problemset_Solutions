@@ -27,7 +27,7 @@ int main() {									// source : tmwillianmlin (using set)
 }
 
 /*
-My code : (using vector) :: time limit exceeded
+My code : (using vector) :: time limit exceeded in 1 case
 
 #include <bits/stdc++.h>
 using namespace std;
