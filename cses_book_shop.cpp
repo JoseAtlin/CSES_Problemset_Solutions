@@ -2,7 +2,7 @@
 using namespace std;
 
 #define ll long long
-ll dp[100001];
+ll dp[100001];									// uses less memory and hence no runtime error
 
 int main() {
 	ll n,x,i,j;
@@ -26,7 +26,7 @@ int main() {
 using namespace std;
 
 #define ll long long
-ll dp[1001][100001];
+ll dp[1001][100001];								//produces runtime error in online judges
 
 int main() {
 	ll n,x,i,j;
