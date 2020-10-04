@@ -2,6 +2,7 @@
 using namespace std;
 
 #define ll long long
+const ll INF = -1e9;
 
 int main() {									// source : tmwillianmlin (using set)
 	int n,m,i,temp;
@@ -14,11 +15,12 @@ int main() {									// source : tmwillianmlin (using set)
 
 	for (i=0;i<m;i++) {
 		cin >> temp;
-		auto it = a.lower_bound({temp+1, 0});
+		auto it = a.lower_bound({temp+1, INF});
 		if (it == a.begin()) {
 			cout << -1 << "\n";
 		}
 		else {
+			cout << (*it) << " ";
 			it--;
 			cout << (*it)[0] << "\n";
 			a.erase(it);
